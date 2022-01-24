@@ -84,8 +84,8 @@ class ConnectFour:
         self.board[row][col] = piece
         self.move_count += 1
 
-    # Given a player number, sets the piece variable and promts the user for their column choice
-    # Keeps promting the user for a valid input until one is given
+    # Given a player number, sets the piece variable and prompts the user for their column choice
+    # Keeps prompting the user for a valid input until one is given
     # Finds the next open row in the valid column and drops the piece into that position
     # Returns a boolean of whether that given move was a game winning move
     def play_turn(self, player_number):
@@ -221,7 +221,7 @@ class ConnectFour:
         )
 
     # This is the main method which starts the game up.
-    # First by promting the user to select which type of game they would like to play (Random or User Inputted).
+    # First by prompting the user to select which type of game they would like to play (Random or User Inputted).
     # Next the game_over variable is set to False, turn is set to 1 and the game board is printed to the console.
     # The turn variable flips between -1 and 1 to determine which player's turn it is to go.
     # The main game loop then begins, calling the functions above in a logical order for smooth game play.
